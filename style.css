@@ -1,0 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+} :root{
+    --color-bg: #0A0909;
+    --color-default: #121212;
+    --color-tb: #705AF8;
+    --color-btn: #6654D8;
+    --color-txt: #fff;
+    --font-family-default: 'Roboto', sans-serif;
+    --font-family-ms:'Montserrat', sans-serif;
+    --font-size-h2: 1.3rem;
+    --font-size-btn: 1.2rem;
+    --font-size-default: 1.4rem;
+    color: #fff;
+
+
+}
+
+body{
+ 
+    background-color:  var(--color-default);
+    color: var(--color-txt);
+
+    
+} 
+
+.header{
+    font-family: var(--font-family-default);
+    padding: 0rem 0.3rem;
+    background-color: var(--color-bg);
+    
+    
+
+} .logo > p{
+    font-size: 1.3rem;
+}
+
+.nav{
+    padding-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.ul-nav{
+    display: flex;  align-items: center; position: relative;
+    margin-right: 0.8rem;    
+} .li-nav{
+    margin: 0rem 0.3rem;
+}  .input-search{   
+    transition: 1s ease-in;
+    width: 4rem;
+    border-radius: 20px;
+    display: block;
+    background-color: #313131;
+    border: none;
+} .user-header{
+     cursor: pointer;  width: 2rem;    height: 1.8rem;
+} .icon-search{
+    width: 1.3rem;height: 0.8rem; 
+    position: absolute;
+    top: 0.6rem;
+    left: 1.2rem;
+   
+    
+} .input-search:focus{
+    width: 8rem;
+    height: 1.3rem;
+    transition: 1s ease-in;
+    outline: none;
+    color:  var(--color-txt);
+    padding: 0rem 0.3rem 0rem 2rem;
+    
+} .itens{
+    display: flex; align-items: center;
+} .menu-hamburguer{
+    cursor: pointer;
+} button{
+    cursor: pointer;
+}
+
+.span-hamburguer{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    width: 3rem;
+    height: 0.2rem;
+    margin-top: 0.2rem;
+    background-color: var(--color-txt);
+   
+} .header-title{
+    max-width: 25rem;
+    text-align: left;
+}
+
+.heading-1{
+    font-size: 1.3rem;
+    font-family: var(--font-family-ms);
+    margin: 1rem 0rem 0.3rem;
+
+} .heading-2{  
+    font-size: var(--font-size-h2); font-family: var(--font-family-ms);
+
+} .span-title{
+    color:#6654D8;
+} .close{
+    cursor: pointer;
+}
+
+.btn-header{
+    margin-top: 1.3rem;
+    background-color: var(--color-btn);
+    border: none;
+    border-radius: 5px;
+    width: 13rem;
+    color: var(--color-txt);
+    font-family: "sans-serif";
+    font-weight: bold;
+    height: 2.3rem;
+    font-size: 1.2rem;
+    text-align: center;
+}  .icon-header{
+    width: 19rem;
+    object-fit: contain;
+
+ 
+
+} 
+
+.modal{
+    background-color: var(--color-txt);
+    color: #000;
+     width: 20rem;
+     padding: 0.3rem 1rem;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  
+} 
+.icon-sociais{
+    width: 3.4rem;
+    height: 3.4rem;
+} .modal-logar{
+    max-width: 18rem;
+    text-align: left;
+    display: none;
+
+} .modal-content{
+    position: relative;
+} .close{
+    position: absolute;
+    right: 0;
+    top: -0.3rem;
+} .close-icon{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.modal-logar > p, .title-cadastrar{
+    margin: 1rem 0rem;
+    font-weight: bold;
+    font-family: var(--font-family-ms);
+}
+.ul-sociais{
+    display: flex;
+    justify-content: space-between;
+    max-width: 16rem;
+    cursor: pointer;
+
+} .modal-option{
+    text-align: center;
+    position: relative;
+    font-size: 1.4rem;
+    margin: 1rem 0rem;
+} .modal-option::before{
+    content: "";
+    display: block;
+    background-color: #C9C9C9;
+    height: 0.1rem;
+    width: 6rem;
+    position: absolute;
+    left: 1.6rem;
+    top: 0.9rem;
+} .modal-option::after{
+    content: "";
+    display: block;
+    background-color: #C9C9C9;
+    height: 0.1rem;
+    width: 6rem;
+    position: absolute;
+    right: 1.6rem;
+    top: 0.9rem;
+} .input-form{
+    width: 100%;
+    margin: 0.3rem 0rem;
+    background-color: #E8E8E8;
+    padding: 0.8rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+ 
+} .input-form:focus{
+    outline:  1px solid #6654D8;
+
+} .btn-modal{
+    background-color: var(--color-btn);
+    width: 100%;
+    height: 2.6rem;
+    margin: 1rem 0rem;
+    border-radius: 5px;
+    border: none;
+    color: var(--color-txt);
+    font-size: var(--font-size-btn)
+} input:placeholder-shown {
+    color: #858585;
+  
+  } .form-text{
+    text-align: center;
+    font-family: var(--font-family-ms);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  } 
+  
+  .span-criar{color:#705AF8;cursor: pointer;} 
+  
+  .title-cadastrar{
+    text-align: center;
+  }.dados-form{
+     font-family: var(--font-family-ms);
+     font-weight: bold;
+     padding: 0.5rem 0rem 0rem;
+  } 
+   
+  .modal-content-sair {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 20rem;
+    transition: 1.5s;
+    background-color: #fff;
+    display: none;
+  }
+  
+  
+  .modal-header-sair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  } .span-sair{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.4rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+   .icon-user-sair{
+    width: 5rem;
+    height: 5rem;
+  } .modal-body-sair{
+    margin: 1rem 0rem 0rem;
+  }
+  
+  .modal-user-info{
+    font-size: 1.4rem;
+    font-family: var(--font-family-ms);
+    margin: 1rem 0rem;
+    font-weight: bold;
+  } .btn-sair{
+     font-size: var(--font-size-btn);
+  } .section-conquista{
+    background-color: var(--color-bg);
+  } .section-amizade{
+    background-color: rgb(0, 0, 0);
+  }
+
+  
+  main{margin-top: 0.3rem;} 
+  
+  .section-descubra{background-color: var(--color-bg);}
+
+  
+  .title-main{
+
+    text-align: center;
+     font-family: var(--font-family-default);
+     font-size: var(--font-size-default);
+     margin: 0.3rem 0rem;
+     padding: 1rem 0rem;
+     
+} .itens-descubra{text-align: center;} 
+
+.paragrafo-descricao{
+    margin: 0 auto;
+    max-width: 20rem;
+    text-align: left;
+
+}
+
+.icon-desc{width: 100%;} 
+
+
+.container-contribuicao{
+    background-color: var(--color-bg);
+    margin: 0.3rem 0rem; 
+    
+}
+
+.section-contribuicao{overflow: auto;
+    padding-bottom: 1rem;
+
+
+}
+
+
+.title-contr{
+    text-align: center;
+    font-size: var(--font-size-h2);
+    padding: 1rem 0rem 3rem;
+    
+} 
+
+table{background-color: #CCCCCC;} 
+
+tr{ background-color: var(--color-tb);} 
+
+th{padding: 1rem;}
+
+td{padding: 1rem;  text-align: center;}
+
+.icon-users{width: 4rem;  height: 4rem;}
+
+.section-amizade{
+   
+    margin-top: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+}
+
+.title-amizade{
+    font-size: var(--font-size-h2);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+} .amizade-conteudo{
+  background-color: #1D1D1D; 
+  width: 18rem;
+  margin-top: 1rem;
+} .icone-amizade{
+    width: 100%;
+    object-fit: cover;
+    height: 8rem;
+}  .amizade-caixa-nome{
+   display: flex;
+   align-items: center;
+  justify-content: space-between;
+    
+} .caixa-span{
+    display: flex;
+}
+
+.span-right{
+    display: block;
+    background-color: #D9D9D9;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0.2rem;
+    border-radius: 50%;
+    
+} .amizade-nome, .amizade-cidade, .amizade-resp{
+    padding: 0.3rem 1rem;
+} .amizade-nome{
+    font-family: var(--font-family-ms);
+}
+
+.amizade-cidade, .amizade-resp{
+    color: #CCCCCC;
+} .btn-box{
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+.btn-adicionar{
+    background-color: var(--color-btn);
+    width: 90%;
+    border: none;
+    padding: 0.6em;
+    color: var(--color-txt);
+    font-family: var(--font-family-ms);
+    font-size: 1.1rem;
+    border-radius: 5px;
+
+}  .section-conquista{
+    padding-bottom: 1rem;
+}
+
+.title-conquista{
+    margin: 0.3rem 0rem;
+    padding: 1rem 0rem;
+    text-align: center;
+} .icon-top{
+    width: 4rem;
+    height: 4rem;
+} .user-container{
+    margin: 0 auto;
+    max-width: 20rem;
+    background-color: #1D1D1D;
+    border-radius: 10px;
+
+} 
+ .user-content-top{
+        padding: 1rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } .itens-right-top{
+        margin-left: 1rem;
+    } .user-name{
+        font-size: var(--font-size-default);
+        font-weight: 600;
+        padding: 1rem 0rem;
+    } .span-progress{
+        content: '';
+        display: block;
+        width: 8rem;
+        height: 0.3rem;
+        border-radius: 10px;
+        background: linear-gradient(to right, #6654D8, #6654D8, #fff);}
+
+        .user-xp{
+            font-size: var(--font-size-defaultt);
+            margin: 1rem 0rem;
+        } .user-container-content-box{
+            border: 1px solid #353535;
+            background-color: #000;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-left: 2rem;
+            max-width: 18rem;
+        } .user-content-info{
+            font-family: var(--font-family-ms);
+            font-weight: 600;
+            margin: 1rem 0rem 0.2rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        } .user-content-info::after{
+       
+            position: absolute;
+            content: "⮟";
+            font-size: 1.2rem;
+            right: 0rem;
+           cursor: pointer;
+            
+        }
+        
+        .user-content-description{
+            font-family: sans-serif;
+            color: #8D8D8D;
+             max-height: 0rem;
+             opacity: 0;
+             transition: 0.5 ease-in;
+    
+        }.img-premios{
+            display: flex;
+            justify-content: space-between;
+            max-width: 8rem;
+           max-height: 0rem;
+           opacity: 0;
+           
+        } 
+        
+        .icon-premio{
+            width: 2rem;
+
+            height: 2rem;
+        } .section-principios{
+            margin-top: 0.3rem;
+            background-color: var(--color-bg);
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        } .span-principios{
+            display: block;
+            width: 0.1rem;
+            height: 10rem;
+            background-color: #383838;
+            margin: 0.4rem 0rem 1rem;
+        } 
+        
+        .principios-caixa{
+           position: relative;
+            
+        } .span-left{
+            position: absolute;
+            width: 5rem;
+            height: 0.1rem;
+            top: 2rem;
+            right: 3rem;
+            display: block;
+           
+        } #principios-esq-1{
+          padding: 0rem 0.8rem;
+            margin: 0.7rem 0rem 1rem;
+            font-size: var(--font-size-default);
+            font-family: var(--font-family-ms);
+          font-weight: 500;
+        }  #principios-esq-2{
+            padding: 0rem 0.8rem;
+            margin: 0.7rem 0rem 1rem;
+            font-size: var(--font-size-default);
+            font-family: var(--font-family-ms);
+          font-weight: 500;
+        }  
+
+        .caixa-contato{            text-align: center;
+            font-size: var(--font-size-default);
+            margin: 0 auto;
+        } .caixa-descricao{
+            margin-top: 1rem;
+   
+        } .form{
+            display: flex;
+            max-width: 22rem;
+            padding: 1rem 0rem;
+            margin: 0 auto;
+            text-align: center;
+    
+        } .form-content{
+            margin: 0 auto;
+            display: flex;
+        }
+        
+        .form-contato{
+            width: 13rem;
+            height: 2.3rem;
+            outline: none; 
+            border: none;
+            padding-left: 0.3rem;
+
+        } .form-contato:focus{
+        
+            outline: none;    transition: 1s ease-in;
+           border: 1px solid var(--color-btn)
+
+        }
+        
+        .btn-enviar{
+            background-color: var(--color-btn);
+            border: none;
+            height: 2.3rem;
+            width: 7rem;
+            color: var(--color-txt);
+            font-size: var(--font-size-defaultt);
+            font-weight: bold;
+  
+        } .contate-nos{
+            background-color: var(--color-bg);
+        } .footer-box{
+            padding: 3rem;
+            margin: 0.3rem 0rem;
+            background-color: var(--color-bg);
+        }
+        
+         .footer-credits{ 
+            text-align: center;
+            background-color: var(--color-bg);
+        
+        } .footer-copy{
+            padding: 1rem 0rem;
+            font-family: var(--font-family-ms);
+            margin-top: 0.3rem;
+            font-size: 1.2rem;
+        } .eu{
+            color: #705AF8;
+        }
+
+
+        @media (max-width: 400px){
+
+
+            .form{ 
+                display: flex;
+                flex-direction: column;
+            } .form-contato{
+                margin: 0.3rem 0rem;
+            }
+        }
+        @media (min-width: 600px){
+
+             .header{
+                padding-left: 2rem;
+             } .icon-header{
+                width: 60%;
+             } 
+        } 
+
+        
+        @media (min-width: 1024px){
+
+             .header-content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+   
+              
+             } .icon-header{
+                width: 40rem;
+                height: 40rem;
+              
+             } .header-title{
+                max-width: 30rem;
+             }
+             
+             .heading-1 {
+                font-size: 2.9rem;
+                padding: 3rem 0rem 1rem;
+                
+             } 
+             .heading-2 {
+                font-size: 2.8rem;
+                padding: 1.5rem 0rem;
+                
+             } 
+             
+             .logo{
+                text-align: center;
+                
+             } .logo > p{
+                font-size: 3rem;
+             }
+             .nav{
+                max-width: 70rem;
+                margin: 0 auto;
+             } .btn-header{
+                height: 3.3rem;
+                width: 16rem;
+                font-size: 1.5rem;
+             } .title-main{
+                font-size: 2.6rem;
+             } .itens-caixa-descubra{
+                display: flex;
+                align-items: center;
+                 max-width: 70rem;
+                 margin: 0 AUTO;
+             } .paragrafo-descricao{
+                font-size: 2.1rem;
+                max-width: 35rem;
+             } table{
+                text-align: center;
+                margin: 0 auto;
+             } .amizade-container{
+                width: 68rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+               
+              
+             } .amizade-conteudo{
+                width: 20rem;
+             } .icone-amizade{
+                height: 10rem;
+             }
+             .amizade-nome{ 
+                font-size: 1.5rem;
+             } .caixa-span{margin-right: 0.8rem;
+             }
+             
+             .span-right{
+                width: 0.6rem;
+                height: 0.6rem;
+             }  .title-conquista, .title-amizade{
+                font-size: 1.8rem;
+
+             } .user-container{min-width: 23rem;  } 
+             
+             .container-conquista{
+                padding: 2rem 0rem;
+                margin-top: 0.3rem;
+                background-color: var(--color-bg);
+             }
+             
+             .section-conquista{
+            
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 50rem;
+                margin: 0 auto;
+             }
+             
+             .user-container-content-box{margin-left: 2.5rem;
+               min-width: 20rem;
+             }
+             
+             .icon-top{width: 4.8rem;height: 4.8rem;
+                             
+             } 
+             .user-name{
+                font-size: 1.6rem;
+             } .user-content-info{
+                font-size: 1.2rem;
+             } .contate-nos{
+       
+                max-width: 80rem;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+             } .caixa-contato{
+                text-align: left;
+                max-width: 25rem;
+             } .form{
+                margin-right: 1rem;
+             }  .caixa-descricao{
+                font-size: 1.7rem;
+             }
+             
+             .form-contato{
+                min-width: 22rem;
+                height:3.4rem;
+             } .btn-enviar{
+                height: 3.4rem;
+                min-width: 8rem;
+             }  .title-contr{
+                font-size: 1.8rem;
+             } .footer-copy{
+                font-size: 1.6rem;
+             }
+        } 
+
+
+        /* Efeitos*/
+
+        .abrir{
+      
+            max-height: 20rem;
+             opacity: 1;
+             transition: 1s ease-in;
+
+        } .rotacionar::after{
+           transform: rotate(180deg);
+           transition: 0.5s ease-in;
+           
+        } .sumirModal{
+            display: none;
+        }  .sumir{
+            display: none;
+        } .user-connected{
+            padding-right: 0.3rem;
+            color: var(--color-btn)
+        } .close-fade{
+          transition: 0.5s;
+          opacity: 0;
+        } .aparecer{
+            display: "block";
+ 
+        }

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookCommunity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+    <section class="section-header">
+    <header class="header"> 
+
+        <nav class="nav"> 
+
+        <div class="logo"> 
+            <p> LC</p>
+        </div>
+
+        <div class="itens"> 
+
+        <ul class="ul-nav"> 
+             
+           <li class="li-nav"><img src="./icon/icon-user.png" class="user-header" > </li>
+           <li class="li-nav"><span class="user-logado-info">  </span></li>
+           
+        </ul>
+
+        <div class="menu-hamburguer"> 
+            <li><span class="span-hamburguer"> </li>
+            <li><span class="span-hamburguer"> </li>
+            <li><span class="span-hamburguer"> </li>
+        </div>
+        </div>
+
+
+        </nav>
+
+        
+        <div class="header-content"> 
+
+           
+        
+            <div class="header-title"> 
+                <h1 class="heading-1"> Look Community: A comunidade que faz a diferença</h1>
+                <h2 class="heading-2"> Junte-se a mais de <span class="span-title"> 100 milhões de pessoas.</span> </h2>
+                <button class="btn-header"> Cadastrar</button>
+            </div>
+
+            <figure>
+                <img src="./img/img-header.png" class="icon-header" >
+            </figure>
+
+        </div>
+
+
+        <div class="modal">
+
+            
+         
+            <div class="modal-content">
+
+                <span class="close"><img src="./icon/close.png" class="close-icon"> </span>
+
+                <div class="modal-logar"> 
+
+               
+                    <p> Logar com: </p>
+     
+
+                 
+
+                    <ul class="ul-sociais">
+                        <li class="itens-sociais"><img src="./icon/icon-fb.png" class="icon-sociais">  </li>
+                        <li class="itens-sociais"><img src="./icon/icon-g.png" class="icon-sociais"> </li>
+                        <li class="itens-sociais"><img src="./icon/icon-link.png" class="icon-sociais"> </li>
+
+                    </ul>
+
+                    <div class="modal-option"> ou </div>
+
+         
+
+              
+
+                <div class="form-login"> 
+                    <input type="text" id="nome-usuario" placeholder="Usuario" class="input-form nome-usuario">
+                    <input type="password" id="password-logar" placeholder="Senha" class="input-form password-logar">
+                     <span class="fail"> </span>
+                    <button class="btn-modal" id="btn-logar"> Logar </button>
+
+                    <p class="form-text"> Querendo <span class="span-criar"> criar uma conta</span>?</p>
+
+                </div> 
+
+            </div>
+
+                <div class="form-registrar"> 
+
+
+                    <p class="title-cadastrar"> Cadastrar</p>
+
+                    <p id="nome-cadastrar" class="dados-form"> Usuario:</p>
+                    <input type="text" id="usuario-cadastro" class="input-form usuario-cadastro" minlength="4">
+                     <span class="info"> </span>
+
+                    <p class="dados-form"> Email:</p>
+                    <input type="email"  id="email-cadastrar" class="input-form email-cadastro">
+
+                    <p class="dados-form"> Senha:</p>
+                    <input type="password" class="senhaform input-form" >
+
+      
+
+                    <button class="btn-modal btn-cadastrar"> Cadastrar</button>
+
+
+
+                </div>
+
+
+
+            </div> <!-- Modal content-->
+            
+
+        </div> <!-- modal-->
+
+
+        <div class="modal-sair">
+
+
+            <div class="modal-content-sair">
+                 
+                <div class="modal-header-sair"> 
+
+                    
+                    
+                    <span><img src="./icon/close.png" class="span-sair"> </span>
+                <figure> 
+                    <img src="./icon/icon-login.png" class="icon-user-sair" > 
+                </figure>
+
+                </div>
+
+
+                <div class="modal-body-sair"> 
+                  
+                    <p class="modal-user-info"> Usuario: <span class="user-logado-nome"> </span></p>
+                    <p class="modal-user-info"> Email: <span class="user-logado-email"> </span>  </p>
+
+                    <button class="btn-sair btn-modal"> Sair </button>
+
+                </div>  
+
+
+            </div> <!-- Modal content-->
+
+
+        </div> <!-- Modal sair-->
+    
+        
+    </header>
+
+    </section>
+
+    <main> 
+
+        <section class="section-descubra"> 
+
+            <h2 class="title-main"> Descubra, colabora e solucione juntos. </h2>
+
+            
+            <div class="itens-caixa-descubra"> 
+
+            <p class="paragrafo-descricao"> Torne-se um herói da comunidade! 
+                Compartilhe seu conhecimento, responda
+                às perguntas dos outros e faça a diferença
+                na vida de milhões de pessoas. Junte-se
+                à nossa missão de ajudar e conecte-se
+                com uma rede de apoio, onde suas
+                respostas importam. </p>
+
+            <img src="./img/img-2.png" class="icon-desc"> 
+
+        </div>
+
+        </section>
+
+       
+
+        <div class="container-contribuicao"> 
+
+            <h2 class="title-contr"> Seja reconhecido por sua contribuição   </h2>
+
+        <section class="section-contribuicao"> 
+
+                   
+            <table> 
+
+                <tr> 
+                    <th> Membro</th>
+                    <th> Nome</th>
+                    <th> Membro desde</th>
+                    <th> ID Membro</th>
+                    <th> Usuarios que recomendam</th>
+                    <th> Posts  Comentados</th>
+                    <th> Ranking</th>
+                </tr>
+
+                <tr> 
+                    <td><img src="./users/icon-1.png" class="icon-users"> </td>
+                    <td> Luana Souza</td>
+                    <td> 03/08/2019</td>
+                    <td> 312832</td>
+                    <td> 868</td>
+                    <td> 2185</td>
+                    <td> 1</td>
+                </tr>
+                <tr> 
+
+                    <td><img src="./users/icon-2.png" class="icon-users"> </td>
+                    <td> Luan Rodrigues</td>
+                    <td> 05/02/2022</td>
+                    <td> 842725</td>
+                    <td> 780</td>
+                    <td> 1890</td>
+                    <td> 2</td>
+                </tr>
+
+                <tr> 
+                    <td><img src="./users/icon-3.png" class="icon-users"> </td>
+                    <td> Marcelo souza</td>
+                    <td> 21/11/2019</td>
+                    <td> 322839</td>
+                    <td> 623</td>
+                    <td> 1952</td>
+                    <td> 3</td>
+                </tr>
+
+                <tr> 
+                    <td> <img src="./users/icon-4.png" class="icon-users"> </td>
+                    <td> Juan Souza</td>
+                    <td> 15/01/2020</td>
+                    <td> 425582</td>
+                    <td> 675</td>
+                    <td> 1610</td>
+                    <td> 4</td>
+                </tr>
+           
+               
+
+            </table>
+
+        </section>
+        </div>
+
+        <section class="section-amizade"> 
+
+            <h2 class="title-amizade"> Faça amizade com apenas um clique.</h2>
+
+            <div class="amizade-container"> 
+
+                <div class="amizade-conteudo"> 
+
+                    <figure> 
+                        <img src="./img/add-1.webp" class="icone-amizade"> 
+                    </figure>
+
+                    <div class="amizade-caixa-nome"> 
+                         
+                        <p class="amizade-nome"> Luciana</p>
+                       
+                        <div class="caixa-span"> 
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                        </div>
+                   </div>
+
+                   <p class="amizade-cidade"> São Paulo, SP</p>
+                   <p class="amizade-resp"> 2.139 respostas </p>
+
+
+                   <div class="btn-box"> 
+                    <button class="btn-adicionar"> Adicionar </button>
+                   </div>
+                </div>
+
+                <div class="amizade-conteudo"> 
+
+                    <figure> 
+                        <img src="./img/add-2.webp" class="icone-amizade"> 
+                    </figure>
+
+                    <div class="amizade-caixa-nome"> 
+                         
+                        <p class="amizade-nome"> Gisele</p>
+                       
+                        <div class="caixa-span"> 
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                        </div>
+                   </div>
+
+                   <p class="amizade-cidade"> Rio De Janeiro, RJ</p>
+                   <p class="amizade-resp"> 1.483 respostas </p>
+
+
+                   <div class="btn-box"> 
+                    <button class="btn-adicionar"> Adicionar </button>
+                   </div>
+                   </div>
+
+                <div class="amizade-conteudo"> 
+
+                    <figure> 
+                        <img src="./img/add-3.webp" class="icone-amizade"> 
+                    </figure>
+
+                    <div class="amizade-caixa-nome"> 
+                         
+                        <p class="amizade-nome"> Irene</p>
+                       
+                        <div class="caixa-span"> 
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                        </div>
+                   </div>
+
+                   <p class="amizade-cidade"> Brasilia, DF</p>
+                   <p class="amizade-resp"> 3.843 respostas </p>
+
+
+                   <div class="btn-box"> 
+                    <button class="btn-adicionar"> Adicionar </button>
+                   </div>
+                   </div>
+
+                
+                <div class="amizade-conteudo"> 
+
+                    <figure> 
+                        <img src="./img/add-4.webp" class="icone-amizade"> 
+                    </figure>
+
+                    <div class="amizade-caixa-nome"> 
+                         
+                        <p class="amizade-nome"> Jonathan</p>
+                       
+                        <div class="caixa-span"> 
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                        </div>
+                   </div>
+
+                   <p class="amizade-cidade">  Nova York, USA </p>
+                   <p class="amizade-resp"> 520 respostas  </p>
+
+
+                   <div class="btn-box"> 
+                    <button class="btn-adicionar"> Adicionar </button>
+                   </div>
+                   </div>
+
+                
+                <div class="amizade-conteudo"> 
+
+                    <figure> 
+                        <img src="./img/add-5.webp" class="icone-amizade"> 
+                    </figure>
+
+                    <div class="amizade-caixa-nome"> 
+                         
+                        <p class="amizade-nome"> Joao </p>
+                       
+                        <div class="caixa-span"> 
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                        </div>
+                   </div>
+
+                   <p class="amizade-cidade"> São Paulo, SP</p>
+                   <p class="amizade-resp"> 873 respostas </p>
+
+
+                   <div class="btn-box"> 
+                    <button class="btn-adicionar"> Adicionar </button>
+                   </div>
+                   </div>
+
+                
+                <div class="amizade-conteudo"> 
+
+                    <figure> 
+                        <img src="./img/add-6.webp" class="icone-amizade"> 
+                    </figure>
+
+                    <div class="amizade-caixa-nome"> 
+                         
+                        <p class="amizade-nome"> Sanchez</p>
+                       
+                        <div class="caixa-span"> 
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                            <span class="span-right"> </span>
+                        </div>
+                   </div>
+
+                   <p class="amizade-cidade"> Buenos Aires, ARG</p>
+                   <p class="amizade-resp"> 2.052 respostas </p>
+
+
+                   <div class="btn-box"> 
+                    <button class="btn-adicionar"> Adicionar </button>
+                   </div>
+                   </div>
+
+                
+
+
+            </div>
+        </section>
+        </div>
+
+
+
+
+
+    
+        <div class="container-conquista"> 
+
+        <section class="section-conquista"> 
+
+            <h2 class="title-conquista"> Mostre suas conquistas</h2>
+
+            <div class="user-container"> 
+
+                <div class="user-container-content"> 
+
+                    <div class="user-content-top"> 
+                        <figure> 
+                            <img src="./users/icon-1.png" class="icon-top">
+                        </figure>
+
+                        <div class="itens-right-top"> 
+                            
+                            <p class="user-name"> Ashley </p>
+                            <span class="span-progress"> </span>
+                           
+
+                            <p class="user-xp"> 60XP para o próximo nível.</p>
+                        </div>
+                    </div>
+
+                    <div class="user-container-content-box"> 
+
+                        <div class="user-feed-content">
+                            <p class="user-content-info"> Nível:</p>
+                            <p class="user-content-description"> Você alcançou o nível
+                                numero 7. Parabéns!! 
+                                </p>
+                        </div>
+
+                        <div class="user-feed-content">
+                            <p class="user-content-info"> Curtidas:</p>
+                            <p class="user-content-description"> UHUL! Você recebeu 
+                                mais de 1.200 curtidas  <span class="heart"> ❤ </span>
+                                </p>
+                        </div>
+
+                        <div class="user-feed-content">
+                            <p class="user-content-info"> Premios:</p>
+
+                            <div class="img-premios"> 
+
+                             <figure> 
+                                <img src="./icon/p1.png" class="icon-premio" title="Ajudante comunitario">
+                             </figure>
+
+                             <figure> 
+                                <img src="./icon/p2.png" class="icon-premio" title="Membro Vip">
+                             </figure>
+                             
+                             <figure>
+                                <img src="./icon/p3.png" class="icon-premio" title="Topicos participados">
+                             </figure>
+                           </div>
+
+                        </div>
+
+                        <div class="user-feed-content">
+                            <p class="user-content-info"> Membro:</p>
+                            <p class="user-content-description">  20/10/2019
+                                </p>
+                        </div>
+
+
+
+                </div> <!-- content-->
+            
+            </div> <!-- container -->
+        </section>
+   
+    </div>
+    
+        
+    </main>
+
+ 
+
+    
+    <div class="footer-box"> 
+    <footer class="contate-nos"> 
+
+
+
+        <div class="caixa-contato"> 
+            <p class="caixa-descricao"> Entre em Contato com a
+                Nossa Equipe!</p>
+
+            <p class="caixa-descricao"> Queremos ouvir você! Inscreva-se
+ aqui para entrar em contato direto 
+com a nossa equipe. Se você tiver
+ dúvidas, sugestões, ou apenas
+ desejar compartilhar suas ideias.</p>
+
+
+        </div>
+
+        <section class="form-content"> 
+
+           
+    <form class="form"> 
+        <input type="email" class="form-contato" placeholder="Email" id="form-contato">
+        <button class="btn-enviar"> Enviar → </button>
+    </form>
+
+</section>
+
+
+
+    </footer>
+
+</div>
+
+    <div class="footer-credits"> 
+        <p class="footer-copy"> Desenvolvido por <span class="eu"> Joao Vitor </span></p>
+    </div>
+    
+
+    <script>
+
+        const menuHamburguer = () => {
+
+    
+            $(".menu-hamburguer").click(function() {
+                $(".modal-sair").css({"display": "block"})
+                $(".modal-content-sair").css({"display": "block"})
+              
+
+               
+            })  
+
+
+         
+           
+      
+                
+        }
+
+        function clicar(){
+            const efeito = document.querySelector(".efeito");
+
+            if(efeito){
+                efeito.click();
+            }
+        }
+
+        setInterval(clicar, 300)
+
+        menuHamburguer()
+
+
+        const abrirModalCadastro = () => {
+            const btnHeader = $(".btn-header")  
+
+             btnHeader.click(() => {
+                const abrirModal =  $(".modal")
+            const loginModal =  $(".modal-logar")
+           const  formCad =  $(".form-registrar")
+
+
+           abrirModal.css({"display": "block"})
+           loginModal.css({"display": "none"})
+           formCad.css({"display": "block"})
+
+
+             })
+
+         const span = $(".close").click(() => {   /*  Fechar Modal */
+         $(".modal").css({"display": "none"});
+    
+    }) 
+
+
+
+        
+       
+
+}
+
+
+abrirModalCadastro();
+
+        const spanAbrirModal = () => { // span do modal logar abre o modal de cadastro.
+
+    const span = $(".span-criar");
+
+    span.click(() => {
+        $(".form-registrar").css({"display": "block"})
+    $(".modal-logar").css({"display": "none"})
+
+    })
+
+    }
+
+    spanAbrirModal();
+
+
+        const openModalLogin = () => { // Abrir modal do login
+            $(".user-header").click((e) => { 
+
+const abrirModal =  $(".modal")
+const loginModal =  $(".modal-logar")
+const  formCad =  $(".form-registrar")
+
+abrirModal.css({"display": "block"})
+loginModal.css({"display": "block"})
+formCad.css({"display": "none"})
+
+         
+         
+           })
+        }
+
+        openModalLogin()
+ 
+        function iconAbrirModal(){ // icone do header que abre o modal.
+    $(".user-header").click(() => {
+        
+const abrirModal =  $(".modal")
+abrirModal.css({"display": "block"})
+    })
+}
+
+iconAbrirModal()
+     
+
+
+
+
+
+
+const criarUsuario = [];
+
+function registrarUsuario() { // Validação de cadastro.
+  const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  const regexCaracteres = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/g;
+  const password = $(".senhaform");
+  const btnCadastrar = $(".btn-cadastrar");
+
+  btnCadastrar.click((e) => {
+    e.preventDefault();
+
+    const usuario = $(".usuario-cadastro").val();
+    const email = $(".email-cadastro").val();
+    const senhaUsuario = password.val();
+
+    if (usuario.length <= 4 || usuario === "" || regexCaracteres.test(usuario) || !regexEmail.test(email) || senhaUsuario === "") {
+      alert("Dados inválidos");
+    } else {
+      criarUsuario.push({ usuario, email, senhaUsuario });
+
+       localStorage.setItem("usuario", usuario)
+       localStorage.setItem("senha", senhaUsuario)
+       localStorage.setItem("email", email)
+       
+      
+       $(".input-form").val("");
+
+    $(".form-registrar").css({"display": "none"})
+    $(".modal-logar").css({"display": "block"})
+    }
+  });
+
+  let cont = 0;
+  let span = $(".info");
+  let contadorIntervalo;
+
+  $(".usuario-cadastro").keypress(function(event) {
+    const regexCaracteres = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-\s]/;
+ 
+    if (regexCaracteres.test(event.key)) {
+      event.preventDefault();
+      
+    }
+
+
+    const userValor = $(".usuario-cadastro").val();
+
+    cont++;
+
+    
+    if (userValor.length <= 3) {
+      $(".info").css({"color": "red", "font-weight": "bold"}).text("Mínimo de 5 letras.").addClass("unsucess-span");
+    } else if (cont >= 5 && cont <= 7) {
+      $(".info").css({"color": "#24a104", "font-weight": "bold"}).text("Minimo 5 letras");
+    } else {
+      $(".info").text("");
+    }
+  });
+}
+
+registrarUsuario(); 
+
+
+
+function recuperarValorLocalStorage(){ // Inserindo valor do LocalStorage na pagina.
+
+const pegarValor = localStorage.getItem("usuario");
+const itemLi = $(".li-nav")
+
+const pegarNome = localStorage.getItem("usuario");
+const limparNome = JSON.parse(pegarNome)
+const editarNome = limparNome.slice(0,4);
+const nomeLimpo = editarNome + "**"
+
+const recuperaEmail = localStorage.getItem("email");
+
+$(".user-logado-nome").text(`${nomeLimpo}`)
+$(".user-logado-email").text(`${recuperaEmail}`)
+
+console.log("valor" + nomeLimpo)
+
+
+
+if(pegarValor){
+
+     $(".user-logado-info").text(`${nomeLimpo}`).css({"font-size": "1.3rem", "color": "#6654d8"})
+
+     
+
+  
+console.log("valor: " + nomeLimpo)
+
+
+
+ 
+
+}  
+
+}
+
+
+
+$(window).on('load', () => { // quando a pagina carregar, verifica se tem o valor no localStorage, se tiver, execute a funçao de recuperar os dados do localstorage.
+
+    const localValor = localStorage.getItem("usuario")
+  
+    if(localValor !== null){
+        recuperarValorLocalStorage();
+    }
+
+})
+
+
+function Logar(){
+
+
+    $("#btn-logar").click(() => {
+        const usuarioLogado = $(".nome-usuario").val();
+        const senhaLogar = $(".password-logar").val();
+       
+        let usuarioEncontrado = null;
+
+        
+
+
+   
+
+    for(let i = 0; i < criarUsuario.length; i++){
+     if(criarUsuario[i].usuario === usuarioLogado 
+     && criarUsuario[i].senhaUsuario === senhaLogar){
+         usuarioEncontrado = criarUsuario[i];
+         const meuJson = JSON.stringify(usuarioLogado)
+ 
+             localStorage.setItem("usuario", meuJson )
+            break
+      
+         
+
+        }
+    }
+    
+     
+    if(usuarioEncontrado){
+
+    
+           const usuarioLength = usuarioLogado.slice(0, 4);
+           const usuarioOculto = usuarioLength + "**"
+           const ulNav = $(".ul-nav");
+   
+
+
+
+
+        $(".modal").css({"display": "none   "})
+       
+        ulNav.append(usuarioOculto).css({"color": "#5941f1"});
+
+ 
+
+        
+    } else{
+     $(".fail").css({"color": "red", "font-weight": "bold"}).text("Usuário ou senha incorretos.")
+    }
+
+
+
+    })
+
+    
+    
+}
+
+ 
+Logar();
+
+
+
+
+const deslogar = () => { 
+
+
+    $(".span-sair").click(() => {
+        $(".modal-sair").css({"display": "none"})
+    })
+
+    const nomeSujo = localStorage.getItem("usuario");
+    const nomeExibido = nomeSujo ? JSON.parse(nomeSujo).slice(0, 4) + "**" : "";
+
+    const usuarioLogado = $(".user-logado-nome").text(nomeExibido)
+    const usuarioEmail = $(".user-logado-email").text(localStorage.getItem("email"))
+    const btnSair = $(".btn-sair");
+
+
+
+    btnSair.click(() => {
+
+  
+        $(".btn-sair").text("Logar")
+        $(".ul-nav li:last ").remove();
+        $(".modal-sair").css({"display": "none"})
+
+        localStorage.removeItem("usuario")
+         localStorage.removeItem("email")
+       localStorage.removeItem("senha")
+
+    })
+
+}
+deslogar()
+
+
+
+
+       function modalEmblemas(){
+            $(".user-content-info").click(function(){
+
+    const nextEl = $(this).next(".user-content-description");
+    const icones = $(this).next(".img-premios");
+    const rotacionarAfter = $(this).toggleClass("rotacionar")
+
+    nextEl.toggleClass("abrir")
+    icones.toggleClass("abrir")
+
+
+
+
+})
+   }
+
+  
+   modalEmblemas();
+
+
+   function friendInvite(){
+
+    
+    $(".btn-adicionar").click(function() {
+      $(this).css({"transition":"1.5s", "background-color": "#5941F1"}).text("Convite enviado");
+    })
+
+ 
+
+  
+
+   }
+
+   friendInvite();
+
+   const validarEmailContato = () => {
+  const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  const inputCampo = $(".form-contato");
+
+  $(".btn-enviar").click((e) => {
+    e.preventDefault();
+
+    const inputValor = inputCampo.val();
+
+    if (inputValor === "") {
+
+    } else if (!regexEmail.test(inputValor)) {
+      alert("E-mail inválido");
+    } else {
+    alert("Email enviado") 
+      inputCampo.val("");
+    }
+  });
+};
+
+validarEmailContato();
+
+
+
+    </script>
+    
+    
+</body>
+</html>
