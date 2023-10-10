@@ -809,10 +809,15 @@ function Logar(){
     if(usuarioEncontrado){
 
     
+         const pegarEmail = localStorage.getItem("email");
            const usuarioLength = usuarioLogado.slice(0, 4);
            const usuarioOculto = usuarioLength + "**"
            const ulNav = $(".ul-nav");
    
+           $(".user-logado-nome").text(usuarioOculto)
+           $(".user-logado-email").text(pegarEmail)
+
+               
 
 
 
